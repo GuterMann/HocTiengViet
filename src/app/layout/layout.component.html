@@ -5,14 +5,15 @@
     aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarResponsive">
 
     <!-- Sidebar -->
     <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-      <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-        <a class="nav-link" href="index.html">
-          <i class="fa fa-fw fa-dashboard"></i>
-          <span class="nav-link-text">Dashboard</span>
+      <li routerLinkActive="active"  class="nav-item" data-toggle="tooltip" data-placement="right" *ngFor="let menuItem of menuItems" title="{{menuItem.title}}">
+        <a class="nav-link" [routerLink]="[menuItem.path]">
+          <i class="{{menuItem.icon}}"></i>
+          <span class="nav-link-text">{{menuItem.title}}</span>
         </a>
       </li>
     </ul>

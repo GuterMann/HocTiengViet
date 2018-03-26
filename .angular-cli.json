@@ -32,8 +32,8 @@
         "../node_modules/chart.js/dist/Chart.min.js",
         "../node_modules/datatables/media/js/jquery.dataTables.js",
         "./assets/js/sb-admin.min.js",
-        "./assets/js/sb-admin-datatables.min.js",
-        "./assets/js/sb-admin-charts.min.js"
+        "./assets/js/sb-admin-datatables.min.js"
+
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

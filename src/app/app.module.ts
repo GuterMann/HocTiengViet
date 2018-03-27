@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+
+import { GridModule } from '@progress/kendo-angular-grid';
 
 
 import { AppComponent } from './app.component';
@@ -22,8 +25,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     DictionaryModule,
     RouterModule.forRoot(AppRoutes),
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
